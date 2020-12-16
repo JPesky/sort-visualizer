@@ -3,6 +3,7 @@ import './ArrayBar.css';
 
 const PRIMARY_COLOR = '#61dafb';
 
+// eslint-disable-next-line react/prop-types
 const ArrayBar = ({ value }) => (
   <div
     className="array-bar"

@@ -4,23 +4,13 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sortingAlgorithms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="Basic Project">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +79,18 @@
       <updated>1607838626716</updated>
       <workItem from="1607838627765" duration="8123000" />
       <workItem from="1607898977848" duration="7808000" />
-      <workItem from="1608009866628" duration="4499000" />
+      <workItem from="1608009866628" duration="5278000" />
+      <workItem from="1608069956800" duration="208000" />
+      <workItem from="1608074928175" duration="5035000" />
     </task>
+    <task id="LOCAL-00001" summary="Basic Project">
+      <created>1608063561797</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608063561797</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +110,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Basic Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic Project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
