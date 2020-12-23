@@ -4,13 +4,15 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="Basic Project">
+    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="Fixed issues">
+      <change afterPath="$PROJECT_DIR$/src/algorithms/bubbleSort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +83,12 @@
       <workItem from="1607898977848" duration="7808000" />
       <workItem from="1608009866628" duration="5278000" />
       <workItem from="1608069956800" duration="208000" />
-      <workItem from="1608074928175" duration="5035000" />
+      <workItem from="1608074928175" duration="5072000" />
+      <workItem from="1608199148461" duration="2000" />
+      <workItem from="1608507623742" duration="9554000" />
+      <workItem from="1608532463765" duration="1038000" />
+      <workItem from="1608663658409" duration="30000" />
+      <workItem from="1608663727237" duration="14889000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Project">
       <created>1608063561797</created>
@@ -90,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608063561797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed issues">
+      <created>1608105346520</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608105346520</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +125,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Basic Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Project" />
+    <MESSAGE value="Fixed issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed issues" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
