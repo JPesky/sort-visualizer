@@ -2,21 +2,26 @@ import swap from './helpers';
 
 export default function bubbleSort(array) {
   const arrayLen = array.length;
-  const swapStates = [];
+  const steps = [];
+  const swapIndices = [];
+  const compareIndices = [];
   let arrayCopy = array.slice(0);
-  swapStates.push(arrayCopy);
+  // steps.push(arrayCopy);
 
   // basic bubble sort implementation
   for (let i = 0; i < arrayLen - 1; i += 1) {
     for (let j = 0; j < arrayLen - i - 1; j += 1) {
-      const jBarValue = arrayCopy[j].props.value;
-      const jPlusOneBarValue = arrayCopy[j + 1].props.value;
+      // compareIndices.push([]);
+      steps.push(arrayCopy);
 
-      if (jBarValue > jPlusOneBarValue) {
+      if (arrayCopy[j] > arrayCopy[j + 1]) {
+        swapIndices.push([j, j + 1]);
         arrayCopy = swap(j, j + 1, arrayCopy);
-        swapStates.push(arrayCopy);
+      } else {
+        swapIndices.push([]);
       }
+      compareIndices.push([j, j + 1]);
     }
   }
-  return swapStates;
+  return [steps, swapIndices, compareIndices];
 }
