@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^1.1.0",
+    "@emotion/react": "^11.1.4",
+    "@emotion/styled": "^11.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "eslint-config-airbnb": "18.2.1",
+    "framer-motion": "^3.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -22,7 +27,15 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+    "rules": {
+      "no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -42,9 +55,5 @@
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.0.0",
     "prettier": "2.2.1"
-  },
-  "prettier": {
-    "singleQuote": false,
-    "jsxSingleQuote": false
   }
 }

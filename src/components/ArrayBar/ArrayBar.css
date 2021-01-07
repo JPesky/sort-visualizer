@@ -4,4 +4,6 @@
     align-items: center;
     width: 30px;
     border-radius: 30px;
+    color: black;
+    transition: margin 150ms ease-in;
 }

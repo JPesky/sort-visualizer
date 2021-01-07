@@ -22,9 +22,8 @@ const ArrayBar = ({ value, beingSwapped, beingCompared }) => {
       className="array-bar"
       style={{
         backgroundColor: `${getColor()}`,
-        height: `${value * 6}px`,
+        height: `${value * 10}px`,
         marginInline: beingCompared || beingSwapped ? `${5}px` : `${1}px`,
-        color: `${getColor()}`, // makes value same color as background - solid bar
       }}
     >
       {value}
