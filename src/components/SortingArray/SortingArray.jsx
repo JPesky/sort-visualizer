@@ -69,6 +69,10 @@ const SortingArray = () => {
       <Button onClick={randomlyFillArray}>Generate New Array</Button>
       <Button onClick={() => handleClickSort(bubbleSort)}>Bubble Sort</Button>
       <Button onClick={handleClickReanimate}>Reanimate</Button>
+      <div>
+        <div className="orange-square">Being Swapped</div>
+        <div className="blue-square">Being Compared</div>
+      </div>
       <div className="array">
         {sortArray}
       </div>

@@ -17,13 +17,15 @@ const ArrayBar = ({ value, beingSwapped, beingCompared }) => {
     return PRIMARY_COLOR;
   };
 
+  // let name = beingSwapped ? 'transition' : "array-bar";
   return (
     <div
       className="array-bar"
       style={{
         backgroundColor: `${getColor()}`,
         height: `${value * 10}px`,
-        marginInline: beingCompared || beingSwapped ? `${5}px` : `${1}px`,
+        marginInline: beingCompared || beingSwapped ? `${10}px` : `${3}px`,
+        color: `${getColor()}`,
       }}
     >
       {value}
