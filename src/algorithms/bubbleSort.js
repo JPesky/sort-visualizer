@@ -12,7 +12,7 @@ export default function bubbleSort(array) {
     for (let j = 0; j < arrayLen - i - 1; j += 1) {
       sortSteps.push(arrayCopy);
 
-      if (arrayCopy[j].value > arrayCopy[j + 1].value) {
+      if (arrayCopy[j] > arrayCopy[j + 1]) {
         swapIndices.push([j, j + 1]);
         arrayCopy = swap(j, j + 1, arrayCopy);
       } else {

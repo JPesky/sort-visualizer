@@ -1,11 +1,11 @@
 import React from 'react';
 import './ArrayBar.css';
+import PropTypes from 'prop-types';
 
 const PRIMARY_COLOR = '#EFE7DA';
 const SWAPPED_COLOR = '#E55812';
 const COMPARED_COLOR = '#00AFB9';
 
-// eslint-disable-next-line react/prop-types
 const ArrayBar = ({ value, beingSwapped, beingCompared }) => {
   const getColor = () => {
     if (beingSwapped) {
@@ -17,7 +17,6 @@ const ArrayBar = ({ value, beingSwapped, beingCompared }) => {
     return PRIMARY_COLOR;
   };
 
-  // let name = beingSwapped ? 'transition' : "array-bar";
   return (
     <div
       className="array-bar"
@@ -25,12 +24,20 @@ const ArrayBar = ({ value, beingSwapped, beingCompared }) => {
         backgroundColor: `${getColor()}`,
         height: `${value * 10}px`,
         marginInline: beingCompared || beingSwapped ? `${10}px` : `${3}px`,
-        color: `${getColor()}`,
       }}
-    >
-      {value}
-    </div>
+    />
   );
 };
 
 export default ArrayBar;
+
+ArrayBar.defaultProps = {
+  beingSwapped: false,
+  beingCompared: false,
+};
+
+ArrayBar.propTypes = {
+  value: PropTypes.number.isRequired,
+  beingSwapped: PropTypes.bool,
+  beingCompared: PropTypes.bool,
+};

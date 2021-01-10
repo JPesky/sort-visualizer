@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@chakra-ui/react';
-import { v4 as uuidv4 } from 'uuid';
 import ArrayBar from '../ArrayBar/ArrayBar';
 import './SortingArray.css';
 import bubbleSort from '../../algorithms/bubbleSort';
 
-const ANIMATION_SPEED_MS = 250;
-const NUMBER_OF_BARS = 15;
+const ANIMATION_SPEED_MS = 350;
+const NUMBER_OF_BARS = 10;
 let RANDOM_NUMS = [];
 let sortStepsWithBars;
+let animating = false;
 
 const SortingArray = () => {
   const [sortArray, setSortArray] = useState([]);
 
   const randomlyFillArray = () => {
+    if (animating) return;
     RANDOM_NUMS.length = 0;
     RANDOM_NUMS = generateRandomNumArray(5, 40);
     setSortArray(() => RANDOM_NUMS.map((randNum) => (
-      <ArrayBar value={randNum.value} key={`${randNum.id}`} />
+      <ArrayBar value={randNum} />
     )));
   };
 
@@ -27,22 +28,27 @@ const SortingArray = () => {
   }, []);
 
   const animateSort = () => {
+    animating = true;
     sortStepsWithBars.forEach((sortStep, index) => {
       setTimeout(() => {
         setSortArray(sortStep);
       }, index * ANIMATION_SPEED_MS);
     });
+    // change variable at end of animation
+    setTimeout(() => {
+      animating = false;
+    }, ANIMATION_SPEED_MS * sortStepsWithBars.length);
   };
 
   // sortStep/swapIndices/compareIndices passed as 1D Array aka One Sort Step
-  const createBar = (sortStep, swapIndices, compareIndices) => sortStep.map((randNum, index) => {
+  const createBar = (sortStep, swapIndices, compareIndices) => sortStep.map((element, index) => {
     if (swapIndices.includes(index)) {
-      return <ArrayBar value={randNum.value} key={`${randNum.id}`} beingSwapped />;
+      return <ArrayBar value={element} beingSwapped />;
     }
     if (compareIndices.includes(index)) {
-      return <ArrayBar value={randNum.value} key={`${randNum.id}`} beingCompared />;
+      return <ArrayBar value={element} beingCompared />;
     }
-    return <ArrayBar value={randNum.value} key={`${randNum.id}`} />;
+    return <ArrayBar value={element} />;
   });
 
   const fillArrayWithBars = (sortSteps, swapIndices, compareIndices) => sortSteps
@@ -51,28 +57,16 @@ const SortingArray = () => {
     ));
 
   const handleClickSort = (sortingAlgorithm) => {
+    if (animating) return;
     const [sortSteps, swapIndices, compareIndices] = sortingAlgorithm(RANDOM_NUMS);
     sortStepsWithBars = fillArrayWithBars(sortSteps, swapIndices, compareIndices);
     animateSort();
-  };
-
-  const handleClickReanimate = () => {
-    // can't reanimate the sort if it hasn't been sorted yet
-    if (!sortStepsWithBars) {
-      return;
-    }
-    animateSort(sortStepsWithBars);
   };
 
   return (
     <>
       <Button onClick={randomlyFillArray}>Generate New Array</Button>
       <Button onClick={() => handleClickSort(bubbleSort)}>Bubble Sort</Button>
-      <Button onClick={handleClickReanimate}>Reanimate</Button>
-      <div>
-        <div className="orange-square">Being Swapped</div>
-        <div className="blue-square">Being Compared</div>
-      </div>
       <div className="array">
         {sortArray}
       </div>
@@ -89,7 +83,7 @@ function getRandomIntInRange(lowBound, upBound) {
 function generateRandomNumArray(lo, hi) {
   const array = [];
   for (let i = 0; i < NUMBER_OF_BARS; i += 1) {
-    array.push({ value: getRandomIntInRange(lo, hi), id: uuidv4() });
+    array.push(getRandomIntInRange(lo, hi));
   }
   return array;
 }
