@@ -4,18 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="Made sorting look smoother">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/QuickSort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/bubbleSort.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/bubbleSort.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArrayBar/ArrayBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SortingArray/SortingArray.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="31d3bcc3-0ebc-470e-8950-959451622e55" name="Default Changelist" comment="Made sorting look smoother" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +111,7 @@
       <workItem from="1610131538134" duration="9819000" />
       <workItem from="1610170869489" duration="196000" />
       <workItem from="1610230807214" duration="3501000" />
-      <workItem from="1610315828020" duration="3160000" />
+      <workItem from="1610315828020" duration="3531000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Project">
       <created>1608063561797</created>
@@ -173,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610131805737</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Made sorting look smoother">
+      <created>1610319124303</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1610319124303</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
