@@ -4,7 +4,7 @@ import ArrayBar from '../ArrayBar/ArrayBar';
 import './SortingArray.css';
 import bubbleSort from '../../algorithms/bubbleSort';
 
-const ANIMATION_SPEED_MS = 350;
+const ANIMATION_SPEED_MS = 200;
 const NUMBER_OF_BARS = 10;
 let RANDOM_NUMS = [];
 let sortStepsWithBars;
